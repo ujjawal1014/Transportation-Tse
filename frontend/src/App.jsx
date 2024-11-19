@@ -5,7 +5,7 @@ import Start_Drive from "./pages/Start_Drive";
 import About_Us from "./pages/About_Us";
 import Traffic_Rule from "./pages/Traffic Signlas/Traffic_Rule";
 import Home from "./pages/Home/Home";
-import Footer from "./components/Footer/footer";
+import Footer from "./components/Footer/Footer";
 
 function AboutUs() {
   return <h2>About Us Page</h2>;

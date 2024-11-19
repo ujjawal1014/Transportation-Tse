@@ -1,7 +1,7 @@
 import Traffic_Rules_Card from "../../components/Traffic_Rules/Card/Traffic_Rules_Card";
 import Traffic_Rules_Heading from "../../components/Traffic_Rules/Heading/Traffic_Rules_Heading";
 import "./Traffic_Rule.css";
-import Footer from "../../components/Footer/footer";
+import Footer from "../../components/Footer/Footer";
 export default function Traffic_Rule() {
   return (
     <>
