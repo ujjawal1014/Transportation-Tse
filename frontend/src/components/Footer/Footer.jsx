@@ -14,6 +14,7 @@ export default function Footer() {
             className="footer-logo"
           />
         </div>
+        {/* heell */}
 
         {/* Middle Section: Title */}
         <div className="footer-title-container">
