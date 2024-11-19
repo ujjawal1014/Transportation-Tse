@@ -1,0 +1,147 @@
+/* Base Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #121212;
+    /* Darker shade for a sleek look */
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    /* Space between sections */
+}
+
+/* Left Section: Logo */
+.footer-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Middle Section: Title */
+.footer-title-container {
+    flex: 2;
+    text-align: center;
+    color: #ffd700;
+    /* Highlighted golden text */
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    color: #cccccc;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Center Section: Links */
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ffd700;
+}
+
+/* Right Section: Social Media */
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right p {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-left,
+    .footer-title-container,
+    .footer-center,
+    .footer-right {
+        flex: 0 0 100%;
+    }
+
+    .footer-logo {
+        width: 100px;
+    }
+
+    .footer-title {
+        font-size: 28px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}

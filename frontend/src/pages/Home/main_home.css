@@ -1,0 +1,7 @@
+.main_home {
+    background: url('https://img.freepik.com/free-photo/highway-sunset-aerial-view_1359-1092.jpg') no-repeat center center;
+    background-size: cover;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); */
+    background-color: rgba(14, 14, 13, 0.8);
+
+}

@@ -1,0 +1,111 @@
+/* Overlay for the login modal */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears on top */
+    transition: all 0.3s ease-in-out; /* Smooth appearance */
+  }
+  
+  /* Login form container */
+  .login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px; /* Increased width for better layout */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Smooth appearance effect */
+    transform: scale(1); /* Starting scale */
+  }
+  
+  .login-form:hover {
+    transform: scale(1.02); /* Slightly scale on hover for an interactive feel */
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #333; /* Darker on hover */
+  }
+  
+  /* Login form headings */
+  .login-form h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input label styling */
+  .login-form label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  /* Input field styling */
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* Login button styling */
+  .login-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  

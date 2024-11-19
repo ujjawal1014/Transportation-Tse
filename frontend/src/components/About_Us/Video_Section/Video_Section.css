@@ -1,0 +1,40 @@
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.2rem;      /* Ensure no extra margin on any side */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;  /* 40% of the viewport height */
+    width: 100vw;  /* Full width of the viewport */
+    object-fit: cover;  /* Ensures the video stretches without distortion */
+    z-index: 1;  /* Keeps the video in the background */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .background-video {
+        height: 50vh;  /* Increase height on smaller screens */
+    }
+    .video-section {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background-video {
+        height: 60vh;  /* Further increase height for very small screens */
+    }
+    .video-section {
+        height: 60vh;
+    }
+   
+}

@@ -1,0 +1,111 @@
+/* Overlay for the signup modal */
+.signup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for emphasis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it appears on top */
+    transition: all 0.3s ease-in-out; /* Smooth appearance */
+  }
+  
+  /* Signup form container */
+  .signup-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px; /* Increased width for better form layout */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    transform: scale(1); /* Starting scale */
+  }
+  
+  .signup-form:hover {
+    transform: scale(1.02); /* Slight hover effect for interactivity */
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #333; /* Darker hover color for close button */
+  }
+  
+  /* Signup form headings */
+  .signup-form h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input label styling */
+  .signup-form label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  /* Input field styling */
+  .signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .signup-form input:focus {
+    border-color: #28a745; /* Green border on focus */
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* Signup button styling */
+  .signup-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green color for signup */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
