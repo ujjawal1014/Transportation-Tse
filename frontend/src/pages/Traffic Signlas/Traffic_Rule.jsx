@@ -50,10 +50,40 @@ export default function Traffic_Rule() {
             }
             name={"No Parking"}
           />
+          <Traffic_Rules_Card
+            image={
+              "https://static.grainger.com/rp/s/is/image/Grainger/3PMH9_AL01"
+            }
+            name={"No Parking"}
+          />
+          <Traffic_Rules_Card
+            image={
+              "https://static.grainger.com/rp/s/is/image/Grainger/3PMH9_AL01"
+            }
+            name={"No Parking"}
+          />
+          <Traffic_Rules_Card
+            image={
+              "https://static.grainger.com/rp/s/is/image/Grainger/3PMH9_AL01"
+            }
+            name={"No Parking"}
+          />
+          <Traffic_Rules_Card
+            image={
+              "https://static.grainger.com/rp/s/is/image/Grainger/3PMH9_AL01"
+            }
+            name={"No Parking"}
+          />
+          <Traffic_Rules_Card
+            image={
+              "https://static.grainger.com/rp/s/is/image/Grainger/3PMH9_AL01"
+            }
+            name={"No Parking"}
+          />
         </div>
       
       </div>
-      <Footer/>
+ 
      
     </>
   );
